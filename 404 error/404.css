@@ -1,0 +1,86 @@
+@font-face {
+  src: url(assets/Kontora.otf);
+  font-family: Kontora;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Kontora;
+}
+
+header {
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  overflow: hidden;
+  background: #c33764; /* fallback colour. Make sure this is just one solid colour. */
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../assets/bg.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),
+    url("../assets/bg.jpg"); /* The least supported option. */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header nav {
+  width: 100vw;
+  height: 15vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav .logo {
+  width: 30%;
+  text-align: center;
+  color: white;
+}
+
+header nav .menu {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+
+header nav .menu a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+header nav .menu #portfolio{
+  color: #f53b57;
+}
+
+header nav .menu a:hover {
+  color: #f53b57;
+}
+
+header main {
+  width: 100vw;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+}
+
+header main h3 {
+  color: white;
+  font-size: 1.6rem;
+}
+
+header main h1 {
+  color: #f53b57;
+  font-size: 6rem;
+}
+
+header main p {
+  color: white;
+  font-size: 1.1rem;
+  margin-bottom: 1.8rem;
+}
